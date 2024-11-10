@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00228675-a594-4c1a-9e79-8a51aaf34be8" name="Changes" comment="Second Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/PROJECT_SE/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/PROJECT_SE/demo/DemoApplication.java" afterDir="false" />
+    <list default="true" id="00228675-a594-4c1a-9e79-8a51aaf34be8" name="Changes" comment="Third Commit">
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/PROJECT_SE/demo/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/PROJECT_SE/demo/DemoApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,7 +50,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Tudor",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "application.passwordSafe",
     "vue.rearranger.settings.migration": "true"
@@ -84,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731259031491</updated>
       <workItem from="1731259032509" duration="6717000" />
-      <workItem from="1731265762172" duration="106000" />
+      <workItem from="1731265762172" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <option name="closed" value="true" />
@@ -118,7 +119,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731260694955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Third Commit">
+      <option name="closed" value="true" />
+      <created>1731265891803</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731265891803</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Third Commit">
+      <option name="closed" value="true" />
+      <created>1731265966948</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731265966948</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +145,7 @@
     <MESSAGE value="Test Commit" />
     <MESSAGE value="Second Commit Commit" />
     <MESSAGE value="Second Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
+    <MESSAGE value="Third Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third Commit" />
   </component>
 </project>
