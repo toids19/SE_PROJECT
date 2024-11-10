@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Greetings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 0;
+            margin-bottom: 30px;
+            border-bottom: 5px solid #3e8e41;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .image-container {
+            margin: 40px 0;
+            padding: 20px;
+            border: 5px solid #4CAF50;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .greetings-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .greeting-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px 0;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.4em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .greeting-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .greeting-item p {
+            margin: 0;
+            color: #333;
+        }
+
+        .error-message {
+            color: red;
+            font-weight: bold;
+        }
+
+        .no-greetings {
+            color: #555;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h2>Greetings from the Database</h2>
+</header>
+
+<!-- Displaying the image -->
+<div class="image-container">
+    <img src="/images/se.png" alt="Image">
+</div>
+
+<div class="greetings-container" id="greetings-container">
+    <!-- Fetched data will be displayed here -->
+</div>
+
+<footer>
+    <p>&copy; 2024 SOFTWARE ENGINEERING PROJECT</p>
+    <p>&copy; MOLDOVANU TUDOR | PIRVULESCU GABRIELA | ROMAN TUDOR</p>
+</footer>
+
+<script>
+    // Function to fetch and display data from the API
+    async function fetchGreetings() {
+        try {
+            const response = await fetch('/api/greeting');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const greetings = await response.json();
+
+            // Display the greetings in the container
+            const container = document.getElementById('greetings-container');
+            container.innerHTML = ''; // Clear existing content
+
+            if (Array.isArray(greetings) && greetings.length > 0) {
+                greetings.forEach(greeting => {
+                    const greetingDiv = document.createElement('div');
+                    greetingDiv.classList.add('greeting-item');
+
+                    const greetingText = document.createElement('p');
+                    greetingText.textContent = greeting.text;
+
+                    greetingDiv.appendChild(greetingText);
+                    container.appendChild(greetingDiv);
+                });
+            } else {
+                const noGreetingsMessage = document.createElement('p');
+                noGreetingsMessage.textContent = 'No greetings found in the database.';
+                noGreetingsMessage.classList.add('no-greetings');
+                container.appendChild(noGreetingsMessage);
+            }
+        } catch (error) {
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = 'Error fetching data: ' + error.message;
+            errorMessage.classList.add('error-message');
+            document.getElementById('greetings-container').appendChild(errorMessage);
+        }
+    }
+
+    // Fetch data on page load
+    window.onload = fetchGreetings;
+</script>
+</body>
+
+</html>
