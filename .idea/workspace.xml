@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00228675-a594-4c1a-9e79-8a51aaf34be8" name="Changes" comment="Final Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/DTO/GreetingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/DTO/GreetingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/PROJECT_SE/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/PROJECT_SE/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/entity/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/entity/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/repository/GreetingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/repository/GreetingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/service/GreetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/service/GreetingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/service/impl/GreetingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/service/impl/GreetingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +61,8 @@
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Tudor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "application.passwordSafe",
     "vue.rearranger.settings.migration": "true"
@@ -96,6 +107,7 @@
       <updated>1731259031491</updated>
       <workItem from="1731259032509" duration="6717000" />
       <workItem from="1731265762172" duration="294000" />
+      <workItem from="1731479597835" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <option name="closed" value="true" />
@@ -169,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731270309084</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Final Commit">
+      <option name="closed" value="true" />
+      <created>1731270419750</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731270419750</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
