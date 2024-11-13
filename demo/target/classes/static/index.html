@@ -1,53 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en"> <!-- Specifies the document type and sets the language to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Greetings</title>
+    <meta charset="UTF-8"> <!-- Defines the character set for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with IE browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+    <title>Display Greetings</title> <!-- Sets the title of the webpage -->
+
     <style>
+        /* Basic styles for the body */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f4f7;
+            font-family: 'Arial', sans-serif; /* Sets a clean and modern font */
+            background-color: #f0f4f7; /* Light background color */
             margin: 0;
             padding: 0;
-            text-align: center;
+            text-align: center; /* Centers text within the body */
         }
 
+        /* Header styles */
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 30px 0;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text color */
+            padding: 30px 0; /* Vertical padding */
             margin-bottom: 30px;
-            border-bottom: 5px solid #3e8e41;
+            border-bottom: 5px solid #3e8e41; /* Decorative border */
         }
 
+        /* Header text */
         h2 {
-            font-size: 2.5em;
-            font-weight: bold;
+            font-size: 2.5em; /* Large font size */
+            font-weight: bold; /* Bold text */
             margin: 0;
         }
 
+        /* Container for the image */
         .image-container {
-            margin: 40px 0;
+            margin: 40px auto; /* Centers the container and adds vertical spacing */
             padding: 20px;
-            border: 5px solid #4CAF50;
-            border-radius: 10px;
-            background-color: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 700px;
-            margin: 40px auto;
+            border: 5px solid #4CAF50; /* Green border */
+            border-radius: 10px; /* Rounded corners */
+            background-color: white; /* White background */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            width: 80%; /* Responsive width */
+            max-width: 700px; /* Limits the maximum width */
         }
 
+        /* Styling for the image */
         .image-container img {
-            max-width: 100%;
+            max-width: 100%; /* Ensures image is responsive */
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
         }
 
+        /* Container for displaying greetings */
         .greetings-container {
             display: flex;
             flex-direction: column;
@@ -55,48 +60,55 @@
             padding: 10px;
         }
 
+        /* Individual greeting item */
         .greeting-item {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* White background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             padding: 20px;
-            margin: 15px 0;
-            width: 80%;
-            max-width: 600px;
+            margin: 15px 0; /* Spacing between items */
+            width: 80%; /* Responsive width */
+            max-width: 600px; /* Limits the maximum width */
             text-align: center;
-            font-size: 1.4em;
-            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1.4em; /* Medium font size */
+            transition: transform 0.3s, box-shadow 0.3s; /* Adds animation effects */
         }
 
+        /* Hover effect for greeting items */
         .greeting-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px); /* Moves the item up slightly */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Increases shadow intensity */
         }
 
+        /* Styling for text within greeting items */
         .greeting-item p {
-            margin: 0;
-            color: #333;
+            margin: 0; /* Removes default margin */
+            color: #333; /* Dark gray text */
         }
 
+        /* Error message styling */
         .error-message {
             color: red;
             font-weight: bold;
         }
 
+        /* Styling for "no greetings" message */
         .no-greetings {
-            color: #555;
+            color: #555; /* Medium gray */
             font-style: italic;
         }
 
+        /* Footer styles */
         footer {
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* Matches header color */
             color: white;
             padding: 20px 0;
             margin-top: 30px;
         }
 
+        /* Footer text */
         footer p {
-            font-size: 1.2em;
+            font-size: 1.2em; /* Medium font size */
             margin: 0;
         }
     </style>
@@ -104,55 +116,69 @@
 
 <body>
 <header>
-    <h2>Greetings from the Database</h2>
+    <h2>Greetings from the Database</h2> <!-- Main heading -->
 </header>
 
-<!-- Displaying the image -->
+<!-- Container for the image -->
 <div class="image-container">
-    <img src="/images/se.png" alt="Image">
+    <img src="/images/se.png" alt="Image"> <!-- Image with a relative path -->
 </div>
 
+<!-- Container for displaying fetched greetings -->
 <div class="greetings-container" id="greetings-container">
-    <!-- Fetched data will be displayed here -->
+    <!-- Fetched data will be displayed dynamically here -->
 </div>
 
 <footer>
-    <p>&copy; 2024 SOFTWARE ENGINEERING PROJECT</p>
-    <p>MOLDOVANU TUDOR | PIRVULESCU GABRIELA | ROMAN TUDOR</p>
+    <p>&copy; 2024 SOFTWARE ENGINEERING PROJECT</p> <!-- Footer message with copyright -->
+    <p>MOLDOVANU TUDOR | PIRVULESCU GABRIELA | ROMAN TUDOR</p> <!-- Author names -->
 </footer>
 
 <script>
-    // Function to fetch and display data from the API
+    // Asynchronous function to fetch and display greetings from the API
     async function fetchGreetings() {
         try {
+            // Sending a GET request to the API endpoint
             const response = await fetch('/api/greeting');
+
+            // Checking if the response is successful
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error('Network response was not ok'); // Throws an error if the response fails
             }
+
+            // Parsing the response as JSON
             const greetings = await response.json();
 
-            // Display the greetings in the container
+            // Selecting the container element for displaying greetings
             const container = document.getElementById('greetings-container');
-            container.innerHTML = ''; // Clear existing content
+            container.innerHTML = ''; // Clears any existing content
 
+            // Check if the response contains any greetings
             if (Array.isArray(greetings) && greetings.length > 0) {
                 greetings.forEach(greeting => {
+                    // Creating a new div element for each greeting item
                     const greetingDiv = document.createElement('div');
                     greetingDiv.classList.add('greeting-item');
 
+                    // Creating a paragraph element for the greeting text
                     const greetingText = document.createElement('p');
                     greetingText.textContent = greeting.text;
 
+                    // Appending the paragraph to the greeting div
                     greetingDiv.appendChild(greetingText);
+
+                    // Appending the greeting div to the container
                     container.appendChild(greetingDiv);
                 });
             } else {
+                // Displaying a message if no greetings are found
                 const noGreetingsMessage = document.createElement('p');
                 noGreetingsMessage.textContent = 'No greetings found in the database.';
                 noGreetingsMessage.classList.add('no-greetings');
                 container.appendChild(noGreetingsMessage);
             }
         } catch (error) {
+            // Displaying an error message if the fetch request fails
             const errorMessage = document.createElement('p');
             errorMessage.textContent = 'Error fetching data: ' + error.message;
             errorMessage.classList.add('error-message');
@@ -160,9 +186,8 @@
         }
     }
 
-    // Fetch data on page load
+    // Calling the fetchGreetings function when the page loads
     window.onload = fetchGreetings;
 </script>
 </body>
-
 </html>
